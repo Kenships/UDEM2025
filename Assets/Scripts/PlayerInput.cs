@@ -31,7 +31,7 @@ public class PlayerInput : MonoBehaviour
 
     private void SubscribeToPlayer2Actions()
     {
-        inputActions.Player2.Move.Enable();
+        inputActions.Player2.Enable();
         inputActions.Player2.Move.performed += OnMove;
         inputActions.Player2.Move.canceled += OnMove;
         inputActions.Player2.Interact.performed += OnInteract;
@@ -39,7 +39,7 @@ public class PlayerInput : MonoBehaviour
 
     private void SubscribeToPlayer1Actions()
     {
-        inputActions.Player1.Move.Enable();
+        inputActions.Player1.Enable();
         inputActions.Player1.Move.performed += OnMove;
         inputActions.Player1.Move.canceled += OnMove;
         inputActions.Player1.Interact.performed += OnInteract;
@@ -47,6 +47,7 @@ public class PlayerInput : MonoBehaviour
 
     private void OnInteract(InputAction.CallbackContext obj)
     {
+        Debug.Log("Interact");
         interactInput.Raise(new NullObject());
     }
 
