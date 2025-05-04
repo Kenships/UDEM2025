@@ -17,6 +17,7 @@ public class AudioManager : MonoBehaviour
         Error_Sound,
         Menu_Flip,
         Reward_Sound,
+        Sink,
         Walk
         // Add more sound types as needed
     }
