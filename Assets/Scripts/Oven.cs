@@ -9,6 +9,7 @@ public class Oven : Appliance
     [SerializeField] private ItemSO cake;
     public override void Interact(GameObject player)
     {
+        AudioManager.Instance.Play(AudioManager.SoundType.Door_Open);
         PlayerInput playerInput = player.GetComponent<PlayerInput>();
         
         playerInput.SetUIMap();
@@ -32,6 +33,7 @@ public class Oven : Appliance
 
     public override void Exit(GameObject player)
     {
+        AudioManager.Instance.Play(AudioManager.SoundType.Door_Close);
         PlayerInput playerInput = player.GetComponent<PlayerInput>();
         Debug.Log(playerInput.GetPlayerNumber());
         playerInput.SetMovementMap();

@@ -7,6 +7,7 @@ public class Book : Appliance
     public override void Interact(GameObject player)
     {
         activeVisual.SetActive(true);
+        AudioManager.Instance.Play(AudioManager.SoundType.Book_Flip);
         StartCoroutine(WaitForSeconds(duration, player));
         
     }

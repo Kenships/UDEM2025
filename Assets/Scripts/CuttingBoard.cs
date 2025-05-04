@@ -11,6 +11,7 @@ public class CuttingBoard : Appliance
     public override void Interact(GameObject player)
     {
         activeVisual.SetActive(true);
+        AudioManager.Instance.Play(AudioManager.SoundType.Cutting_Board);
         StartCoroutine(WaitForSeconds(duration, player));
         Inventory inventory = player.GetComponent<Inventory>();
         if(inventory.GetItem().Value == null)
