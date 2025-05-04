@@ -6,10 +6,9 @@ public class Oven : Appliance
     public override void Interact(GameObject player)
     {
         PlayerInput playerInput = player.GetComponent<PlayerInput>();
-
-        playerInput.cancelInput.OnRaised += Exit;
         
         playerInput.SetUIMap();
+        playerInput.cancelInput.OnRaised += Exit;
 
         if (playerInput.GetPlayerNumber() == 1)
         {
@@ -17,14 +16,14 @@ public class Oven : Appliance
         }
         else if(playerInput.GetPlayerNumber() == 2)
         {
-            Instantiate(popupWindow, PopupManager.Instance.leftPopup.transform);
+            Instantiate(popupWindow, PopupManager.Instance.rightPopup.transform);
         }
     }
 
     public override void Exit(GameObject player)
     {
         PlayerInput playerInput = player.GetComponent<PlayerInput>();
-        playerInput.cancelInput.OnRaised -= Exit;
+        
         playerInput.SetMovementMap();
         
         if (playerInput.GetPlayerNumber() == 1)
@@ -36,4 +35,6 @@ public class Oven : Appliance
             Destroy(PopupManager.Instance.rightPopup.transform.GetChild(0).gameObject);
         }
     }
+    
+    
 }

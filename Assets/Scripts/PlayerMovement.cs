@@ -13,16 +13,21 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private ScriptableEventNoParam interactInput;
 
     [SerializeField] private GameObject rootVisual;
+    [SerializeField] private float rayDistance = 2f;
+    [SerializeField] private Transform rayCastPoint;
     
     private Vector2 direciton;
+    private Vector3 rayCastOriginalPosition;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Vector2 lastDirection;
+    private IInteractable lastInteractable;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = rootVisual.GetComponent<SpriteRenderer>();
+        rayCastOriginalPosition = rayCastPoint.localPosition;
     }
 
     private void Start()
@@ -34,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnInteractInputRaised()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, lastDirection, 1f);
+        RaycastHit2D hit = Physics2D.Raycast(rayCastPoint.position, lastDirection, rayDistance);
         
         if (!hit) return;
         Debug.Log(hit.collider.name);
@@ -46,16 +51,27 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnMovementInputChanged(Vector2 direciton)
     {
-        if (direciton.Equals(Vector2.zero))
+        if (!(direciton.Equals(lastDirection) || direciton.Equals(Vector2.zero)))
         {
-            lastDirection = this.direciton;
+            lastDirection = direciton;
         }
         this.direciton = direciton.normalized;
     }
 
     public void Update()
     {
-        Debug.DrawRay(transform.position, lastDirection, Color.red);
+        Debug.DrawRay(rayCastPoint.position, lastDirection * rayDistance, Color.red);
+        RaycastHit2D hit = Physics2D.Raycast(rayCastPoint.position, lastDirection, rayDistance);
+        if (hit && hit.collider.gameObject.TryGetComponent(out IInteractable interactable))
+        {
+            lastInteractable = interactable;
+            interactable.Select(gameObject);
+        }
+        else if (lastInteractable != null)
+        {
+            lastInteractable.Deselect(gameObject);
+            lastInteractable = null;
+        }
         Move();
         OrientSprite();
     }
@@ -64,14 +80,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (rb.linearVelocity.x < 0)
         {
+            rayCastPoint.localPosition = new Vector3(rayCastOriginalPosition.x, rayCastOriginalPosition.y, 0);
             sr.flipX = false;
             
         }
         
         if (rb.linearVelocity.x > 0)
         {
+            rayCastPoint.localPosition = new Vector3(-rayCastOriginalPosition.x, rayCastOriginalPosition.y, 0);
             sr.flipX = true;
-            
         }
 
         int rotation = sr.flipX ? 10 : -10;
