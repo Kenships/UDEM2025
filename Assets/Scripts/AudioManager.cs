@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
         Button_Select,
         Button_Selct_2,
         Clock_Ticking,
+        Cutting_Board,
         Door_Close,
         Door_Open,
         Error_Sound,

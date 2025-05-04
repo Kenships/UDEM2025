@@ -7,7 +7,7 @@ public class CuttingBoard : Appliance
     public override void Interact(GameObject player)
     {
         activeVisual.SetActive(true);
-        AudioManager.Instance.Play(AudioManager.SoundType.Bark);
+        AudioManager.Instance.Play(AudioManager.SoundType.Cutting_Board);
         StartCoroutine(WaitForSeconds(duration, player));
         
     }
