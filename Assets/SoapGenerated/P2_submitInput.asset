@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c64a88686aa322f4793fb514a8607554, type: 3}
-  m_Name: interactInput 1
+  m_Script: {fileID: 11500000, guid: 3b4ca911a693eb84c8065b54815ee711, type: 3}
+  m_Name: P2_submitInput
   m_EditorClassIdentifier: 
   TagIndex: 0
   Description: 
   _debugLogEnabled: 0
+  _debugValue: {fileID: 0}
