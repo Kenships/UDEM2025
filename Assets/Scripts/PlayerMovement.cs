@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject rootVisual;
     [SerializeField] private float rayDistance = 2f;
     [SerializeField] private Transform rayCastPoint;
+    [SerializeField] private Animator animator;
     
     private Vector2 direciton;
     private Vector3 rayCastOriginalPosition;
@@ -109,5 +110,14 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         rb.linearVelocity = (Vector3)direciton * speed;
+        
+        if(!rb.linearVelocity.Equals(Vector3.zero))
+        {
+            animator.SetTrigger("Run");
+        }
+        else
+        {
+            animator.SetTrigger("Idle");
+        }
     }
 }
