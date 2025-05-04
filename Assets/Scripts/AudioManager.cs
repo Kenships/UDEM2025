@@ -7,10 +7,13 @@ public class AudioManager : MonoBehaviour
     {
         Bark,
         Bell_Ring,
+        Book_Flip,
         Button_Hover,
         Button_Select,
         Button_Selct_2,
         Clock_Ticking,
+        Door_Close,
+        Door_Open,
         Error_Sound,
         Menu_Flip,
         Reward_Sound,
