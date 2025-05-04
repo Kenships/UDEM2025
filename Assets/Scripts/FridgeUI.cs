@@ -129,4 +129,5 @@ public class FridgeUI : MonoBehaviour
             itemSOVariable2.Value = butterSO;
         }
     }
+    
 }

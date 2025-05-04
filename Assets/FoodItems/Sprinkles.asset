@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8c5790c86b5994497ed260bd9ec003, type: 3}
   m_Name: Sprinkles
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 1891822581, guid: 9d02d969f1abf65458234798f382fb85, type: 3}
   itemName: 

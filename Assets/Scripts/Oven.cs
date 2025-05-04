@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Oven : Appliance
 {
+    [SerializeField] private ItemSO batter;
+    [SerializeField] private ItemSO cake;
     public override void Interact(GameObject player)
     {
         PlayerInput playerInput = player.GetComponent<PlayerInput>();
@@ -13,8 +15,19 @@ public class Oven : Appliance
         playerInput.cancelInput.OnRaised += Exit;
         
         
+        
         playersInteracting.Add(player);
         activeVisual.SetActive(true);
+        
+        Inventory inventory = player.GetComponent<Inventory>();
+        if (inventory.GetItem().Value == null)
+        {
+            return;
+        }
+        if (inventory.GetItem().Value.Equals(batter))
+        {
+            inventory.GetItem().Value = cake;
+        }
     }
 
     public override void Exit(GameObject player)

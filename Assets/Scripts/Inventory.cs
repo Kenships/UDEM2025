@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class ItemFrameUpdater : MonoBehaviour
+public class Inventory : MonoBehaviour
 {
     [SerializeField] private GameObject frame;
     [SerializeField] private GameObject itemPrefab;
@@ -40,5 +40,10 @@ public class ItemFrameUpdater : MonoBehaviour
         {
             Debug.LogWarning("Item prefab does not have an Image component.");
         }
+    }
+    
+    public ItemSOVariable GetItem()
+    {
+        return item;
     }
 }
