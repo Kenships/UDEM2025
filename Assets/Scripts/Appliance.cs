@@ -69,6 +69,7 @@ public abstract class Appliance : MonoBehaviour, IInteractable
     protected void MovementMode(GameObject player)
     {
         PlayerInput playerInput = player.GetComponent<PlayerInput>();
+        playerInput.cancelInput.OnRaised -= Exit;
         playerInput.SetMovementMap();
         activeVisual.SetActive(false);
         

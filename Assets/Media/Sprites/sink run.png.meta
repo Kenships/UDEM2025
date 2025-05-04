@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: efa7ece5817af3f4f813863cffea8f59
+guid: 2bb03f59839f21441b25ce6066f5ebe0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: orange highlight book_1
+      name: sink run_0
       rect:
         serializedVersion: 2
-        x: 822
-        y: 217
-        width: 258
-        height: 212
+        x: 235
+        y: 1306
+        width: 217
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d15d2b6b4c39ec944aeb5aca17d90a9e
-      internalID: -1840824856
+      spriteID: 6c7a132be12b2eb489192b34b81fa46a
+      internalID: -1636011741
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      orange highlight book_0: -23580984
-      orange highlight book_1: -1840824856
+      sink run_0: -1636011741
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

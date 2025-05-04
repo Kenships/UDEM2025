@@ -49,12 +49,12 @@ public class PlayerInput : MonoBehaviour
 
     private void OnCancel(InputAction.CallbackContext obj)
     {
-        cancelInput.Raise(gameObject);
+        cancelInput.Raise(transform.gameObject);
     }
 
     private void OnSubmit(InputAction.CallbackContext obj)
     {
-        submitInput.Raise(gameObject);
+        submitInput.Raise(transform.gameObject);
     }
 
     private void OnNavigate(InputAction.CallbackContext obj)

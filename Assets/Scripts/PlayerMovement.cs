@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log(hit.collider.name);
         if (hit.collider != null && hit.collider.gameObject.TryGetComponent(out IInteractable interactable))
         {
-            interactable.Interact(gameObject);
+            interactable.Interact(transform.gameObject);
         }
     }
 

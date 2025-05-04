@@ -29,8 +29,9 @@ public class Oven : Appliance
     public override void Exit(GameObject player)
     {
         PlayerInput playerInput = player.GetComponent<PlayerInput>();
-        
+        Debug.Log(playerInput.GetPlayerNumber());
         playerInput.SetMovementMap();
+        playerInput.cancelInput.OnRaised -= Exit;
         
         if (playerInput.GetPlayerNumber() == 1)
         {
@@ -40,7 +41,6 @@ public class Oven : Appliance
         {
             Destroy(PopupManager.Instance.rightPopup.transform.GetChild(0).gameObject);
         }
-
         playersInteracting.Remove(player);
 
         if (playersInteracting.Count == 0)
