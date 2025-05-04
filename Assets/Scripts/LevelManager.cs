@@ -15,7 +15,8 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Space))
+            changeScene();
     }
 
     public void changeScene()
