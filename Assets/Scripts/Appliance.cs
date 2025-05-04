@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Obvious.Soap;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -10,7 +11,12 @@ public abstract class Appliance : MonoBehaviour, IInteractable
     [SerializeField] protected GameObject selectionVisual2;
     [SerializeField] protected GameObject activeVisual;
     [SerializeField] protected GameObject popupWindow;
+    protected List<GameObject> playersInteracting;
 
+    private void Awake()
+    {
+        playersInteracting = new List<GameObject>();
+    }
     public void Start()
     {
         selectionVisual1.SetActive(false);
@@ -46,6 +52,35 @@ public abstract class Appliance : MonoBehaviour, IInteractable
             selectionVisual2.SetActive(false);
         }
     }
+
+    protected void InteractMode(GameObject player)
+    {
+        activeVisual.SetActive(true);
+        
+        PlayerInput playerInput = player.GetComponent<PlayerInput>();
+        
+        playerInput.cancelInput.OnRaised += Exit;
+        
+        playerInput.SetUIMap();
+        
+        playersInteracting.Add(player);
+    }
+    
+    protected void MovementMode(GameObject player)
+    {
+        PlayerInput playerInput = player.GetComponent<PlayerInput>();
+        playerInput.SetMovementMap();
+        activeVisual.SetActive(false);
+        
+        playersInteracting.Remove(player);
+
+        if (playersInteracting.Count == 0)
+        {
+            activeVisual.SetActive(false);
+        }
+    }
+    
+    
 
     public abstract void Exit(GameObject player);
 }

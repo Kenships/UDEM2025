@@ -5,13 +5,6 @@ using UnityEngine;
 
 public class Oven : Appliance
 {
-    private List<GameObject> playersInteracting;
-
-    private void Awake()
-    {
-        playersInteracting = new List<GameObject>();
-    }
-
     public override void Interact(GameObject player)
     {
         PlayerInput playerInput = player.GetComponent<PlayerInput>();
