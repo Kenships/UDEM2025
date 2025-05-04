@@ -97,15 +97,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icons_0
+      name: flour
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1919
-        width: 383
-        height: 389
+        x: 71
+        y: 2042
+        width: 225
+        height: 265
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -119,15 +119,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_1
+      name: white powder
       rect:
         serializedVersion: 2
         x: 454
         y: 2002
         width: 306
-        height: 322
+        height: 279
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -141,29 +141,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_2
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 2162
-        width: 73
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 765e0f70041edf742824151571c48194
-      internalID: 1825315086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icons_3
+      name: sugar
       rect:
         serializedVersion: 2
         x: 898
@@ -171,7 +149,7 @@ TextureImporter:
         width: 256
         height: 249
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,7 +163,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_4
+      name: yolk
       rect:
         serializedVersion: 2
         x: 1312
@@ -193,7 +171,7 @@ TextureImporter:
         width: 235
         height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,7 +193,7 @@ TextureImporter:
         width: 4
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -229,59 +207,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_6
+      name: milk
       rect:
         serializedVersion: 2
-        x: 602
-        y: 2000
-        width: 5
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cdbd3c560ac509b44bb3708304f2495d
-      internalID: 1035450824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icons_7
-      rect:
-        serializedVersion: 2
-        x: 612
-        y: 2000
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9214fdc9d715e3a44bcc74dd641bd18e
-      internalID: -327316214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icons_8
-      rect:
-        serializedVersion: 2
-        x: 485
+        x: 549
         y: 1640
-        width: 255
+        width: 161
         height: 322
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -295,7 +229,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_12
+      name: sprinkles
       rect:
         serializedVersion: 2
         x: 872
@@ -303,7 +237,7 @@ TextureImporter:
         width: 282
         height: 254
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -317,7 +251,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_13
+      name: butter
       rect:
         serializedVersion: 2
         x: 1300
@@ -325,7 +259,7 @@ TextureImporter:
         width: 340
         height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -339,15 +273,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_14
+      name: eggs
       rect:
         serializedVersion: 2
-        x: 91
+        x: 89
         y: 1743
         width: 190
         height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -361,15 +295,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_49
+      name: peanuts
       rect:
         serializedVersion: 2
         x: 833
-        y: 1213
+        y: 1214
         width: 344
         height: 362
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -383,37 +317,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_50
+      name: lime
       rect:
         serializedVersion: 2
-        x: 918
-        y: 1532
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a636b558c63ca094eb38ec9bd910fd2f
-      internalID: -2116103179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icons_52
-      rect:
-        serializedVersion: 2
-        x: 64
+        x: 120
         y: 1311
-        width: 206
+        width: 150
         height: 197
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -427,7 +339,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_53
+      name: lime slice
       rect:
         serializedVersion: 2
         x: 526
@@ -435,7 +347,7 @@ TextureImporter:
         width: 222
         height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -449,7 +361,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_55
+      name: milkmix
       rect:
         serializedVersion: 2
         x: 1267
@@ -457,7 +369,7 @@ TextureImporter:
         width: 326
         height: 283
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -471,37 +383,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_71
+      name: strawberry
       rect:
         serializedVersion: 2
-        x: 24
-        y: 878
-        width: 49
-        height: 93
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f818a6460c87af4ca4c14d6a98e2b6c
-      internalID: 1809754168
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icons_72
-      rect:
-        serializedVersion: 2
-        x: 49
+        x: 127
         y: 819
-        width: 302
+        width: 210
         height: 268
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -515,15 +405,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_73
+      name: CutStrawberry
       rect:
         serializedVersion: 2
-        x: 486
+        x: 487
         y: 774
         width: 234
-        height: 259
+        height: 238
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -537,7 +427,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_74
+      name: icing
       rect:
         serializedVersion: 2
         x: 855
@@ -545,7 +435,7 @@ TextureImporter:
         width: 283
         height: 318
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -559,7 +449,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_75
+      name: mixed wets
       rect:
         serializedVersion: 2
         x: 1301
@@ -567,7 +457,7 @@ TextureImporter:
         width: 259
         height: 248
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -581,7 +471,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_76
+      name: Egg whites whipped
       rect:
         serializedVersion: 2
         x: 48
@@ -589,7 +479,7 @@ TextureImporter:
         width: 301
         height: 278
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -603,15 +493,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_77
+      name: cake batter
       rect:
         serializedVersion: 2
-        x: 458
-        y: 397
+        x: 457
+        y: 396
         width: 282
         height: 365
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -625,15 +515,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_78
+      name: egg whites
       rect:
         serializedVersion: 2
-        x: 871
+        x: 872
         y: 475
         width: 209
-        height: 257
+        height: 191
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -647,15 +537,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_80
+      name: tresleches
       rect:
         serializedVersion: 2
         x: 1260
         y: 424
         width: 323
-        height: 264
+        height: 223
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -669,15 +559,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_81
+      name: lime cake
       rect:
         serializedVersion: 2
         x: 40
         y: 85
         width: 337
-        height: 233
+        height: 196
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -691,15 +581,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_82
+      name: Bday cake
       rect:
         serializedVersion: 2
         x: 479
-        y: 76
+        y: 75
         width: 261
         height: 294
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -713,7 +603,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_83
+      name: base cake
       rect:
         serializedVersion: 2
         x: 870
@@ -721,7 +611,7 @@ TextureImporter:
         width: 320
         height: 257
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -735,7 +625,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons_84
+      name: trash
       rect:
         serializedVersion: 2
         x: 1306
@@ -743,7 +633,7 @@ TextureImporter:
         width: 226
         height: 265
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -770,13 +660,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icons_0: -486257330
-      icons_1: -1282923199
+      Bday cake: 2105010876
+      CutStrawberry: 534023163
+      Egg whites whipped: -1693753052
+      base cake: 1871256595
+      butter: 1955413972
+      cake batter: 2119935869
+      egg whites: -1463349363
+      eggs: -1692965889
+      flour: -486257330
+      icing: 1757238694
+      icons_0: -672003748
       icons_10: -1318019638
       icons_11: 1602949202
-      icons_12: 1891822581
-      icons_13: 1955413972
-      icons_14: -1692965889
       icons_15: 2124014095
       icons_16: -889532248
       icons_17: -211588083
@@ -793,7 +689,6 @@ TextureImporter:
       icons_27: 302529894
       icons_28: 1469759949
       icons_29: 884375987
-      icons_3: 1378573733
       icons_30: -1285087722
       icons_31: -276980044
       icons_32: 1317638529
@@ -804,7 +699,6 @@ TextureImporter:
       icons_37: 1651791242
       icons_38: 256890690
       icons_39: -1937104539
-      icons_4: 2073137684
       icons_40: -342785740
       icons_41: -884319844
       icons_42: 1304306384
@@ -814,14 +708,10 @@ TextureImporter:
       icons_46: 534099930
       icons_47: -1227831603
       icons_48: 1743414754
-      icons_49: 45608510
       icons_5: -844103502
       icons_50: -2116103179
       icons_51: 119233154
-      icons_52: 1233034067
-      icons_53: -660749066
       icons_54: 1088034028
-      icons_55: -83107463
       icons_56: 1687042468
       icons_57: 1744980160
       icons_58: 1266410609
@@ -840,21 +730,22 @@ TextureImporter:
       icons_7: -327316214
       icons_70: 1149263562
       icons_71: 1809754168
-      icons_72: -25948744
-      icons_73: 534023163
-      icons_74: 1757238694
-      icons_75: 195931222
-      icons_76: -1693753052
-      icons_77: 2119935869
-      icons_78: -1463349363
       icons_79: 1061692635
-      icons_8: -633190094
-      icons_80: 1808901176
-      icons_81: -788695300
-      icons_82: 2105010876
-      icons_83: 1871256595
-      icons_84: 1016898219
       icons_9: 1804029600
+      lime: 1233034067
+      lime cake: -788695300
+      lime slice: -660749066
+      milk: -633190094
+      milkmix: -83107463
+      mixed wets: 195931222
+      peanuts: 45608510
+      sprinkles: 1891822581
+      strawberry: -25948744
+      sugar: 1378573733
+      trash: 1016898219
+      tresleches: 1808901176
+      white powder: -1282923199
+      yolk: 2073137684
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

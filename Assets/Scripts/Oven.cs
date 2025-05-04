@@ -11,15 +11,6 @@ public class Oven : Appliance
         
         playerInput.SetUIMap();
         playerInput.cancelInput.OnRaised += Exit;
-    
-        if (playerInput.GetPlayerNumber() == 1)
-        {
-            Instantiate(popupWindow, PopupManager.Instance.leftPopup.transform);
-        }
-        else if(playerInput.GetPlayerNumber() == 2)
-        {
-            Instantiate(popupWindow, PopupManager.Instance.rightPopup.transform);
-        }
         
         
         playersInteracting.Add(player);
@@ -33,14 +24,7 @@ public class Oven : Appliance
         playerInput.SetMovementMap();
         playerInput.cancelInput.OnRaised -= Exit;
         
-        if (playerInput.GetPlayerNumber() == 1)
-        {
-            Destroy(PopupManager.Instance.leftPopup.transform.GetChild(0).gameObject);
-        }
-        else if(playerInput.GetPlayerNumber() == 2)
-        {
-            Destroy(PopupManager.Instance.rightPopup.transform.GetChild(0).gameObject);
-        }
+        
         playersInteracting.Remove(player);
 
         if (playersInteracting.Count == 0)
