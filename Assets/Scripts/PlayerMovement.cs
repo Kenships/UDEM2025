@@ -10,25 +10,52 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float turningSpeed = 10f;
     
     [SerializeField] private Vector2Variable movementInput;
+    [SerializeField] private ScriptableEventNoParam interactInput;
 
     [SerializeField] private GameObject rootVisual;
-
+    
     private Vector2 direciton;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
-    private void Start()
+    private Vector2 lastDirection;
+
+    private void Awake()
     {
-        movementInput.OnValueChanged += OnMovementInputChanged;
         rb = GetComponent<Rigidbody2D>();
         sr = rootVisual.GetComponent<SpriteRenderer>();
     }
+
+    private void Start()
+    {
+        movementInput.OnValueChanged += OnMovementInputChanged;
+        interactInput.OnRaised += OnInteractInputRaised;
+        
+    }
+
+    private void OnInteractInputRaised()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, lastDirection, 1f);
+        
+        if (!hit) return;
+        Debug.Log(hit.collider.name);
+        if (hit.collider != null && hit.collider.gameObject.TryGetComponent(out IInteractable interactable))
+        {
+            interactable.Interact(gameObject);
+        }
+    }
+
     private void OnMovementInputChanged(Vector2 direciton)
     {
+        if (direciton.Equals(Vector2.zero))
+        {
+            lastDirection = this.direciton;
+        }
         this.direciton = direciton.normalized;
     }
 
     public void Update()
     {
+        Debug.DrawRay(transform.position, lastDirection, Color.red);
         Move();
         OrientSprite();
     }

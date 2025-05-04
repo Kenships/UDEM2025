@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33653d5fffc16644bb2d768701efbabf, type: 3}
-  m_Name: movementInput
+  m_Name: P2_UIMovementInput
   m_EditorClassIdentifier: 
   TagIndex: 0
   Description: 

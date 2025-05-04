@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
-    [SerializeField] private ScriptableEventNullObject interactEvent;
+    [SerializeField] private ScriptableEventNoParam interactEvent;
     [SerializeField] private ScriptableEventBool popupEvent;
 
     private bool isOpen;
@@ -12,7 +12,7 @@ public class PlayerInteract : MonoBehaviour
         interactEvent.OnRaised += OnInteractEventRaised;
     }
 
-    private void OnInteractEventRaised(NullObject obj)
+    private void OnInteractEventRaised()
     {
         popupEvent.Raise(isOpen);
         isOpen = !isOpen;

@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class PopupWindow : MonoBehaviour
 {
-    [SerializeField] ScriptableEventBool popupEvent;
-
-    private void Start()
-    {
-        popupEvent.OnRaised += OnPopupEventRaised;
-    }
+    
 
     private void OnPopupEventRaised(bool isOpen)
     {
@@ -23,12 +18,12 @@ public class PopupWindow : MonoBehaviour
         }
     }
 
-    private void Hide()
+    public void Hide()
     {
        gameObject.SetActive(false);
     }
 
-    private void Show()
+    public void Show()
     {
         gameObject.SetActive(true);
     }
